@@ -1,0 +1,136 @@
+---
+layout: default
+---
+<article class="product-detail">
+  <header class="product-header">
+    <p class="product-type">{{ page.series_name }} &mdash; {{ page.type_name }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="product-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  {% if page.image_placeholder %}
+  <div class="product-image-placeholder">
+    <span class="placeholder-text">{{ page.image_placeholder }}</span>
+    <span class="placeholder-size">Image: {{ page.image_size }}</span>
+  </div>
+  {% endif %}
+
+  <div class="product-content">
+    {% if page.overview %}
+    <section class="product-overview">
+      <h2>产品概述</h2>
+      {{ page.overview | markdownify }}
+    </section>
+    {% endif %}
+
+    {% if page.features %}
+    <section class="product-features">
+      <h2>产品特点</h2>
+      <ul>
+        {% for feature in page.features %}
+        <li>{{ feature }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if page.applications %}
+    <section class="product-applications">
+      <h2>典型应用</h2>
+      <ul>
+        {% for app in page.applications %}
+        <li>{{ app }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if page.specs %}
+    <section class="product-specs">
+      <h2>技术规格</h2>
+      <div class="table-responsive">
+        <table class="spec-table">
+          <tbody>
+            {% for spec in page.specs %}
+            <tr>
+              <th>{{ spec[0] }}</th>
+              <td>{{ spec[1] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.spec_table %}
+    <section class="product-spec-table">
+      <h2>型号参数</h2>
+      <p class="table-note">点击列标题可排序；使用搜索框快速筛选型号。</p>
+      {% include specs_filter.html table_id="spec-table" %}
+      <div class="table-responsive">
+        <table id="spec-table" class="spec-data-table">
+          <thead>
+            <tr>
+              {% for header in page.spec_table.headers %}
+              <th>{{ header }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in page.spec_table.rows %}
+            <tr>
+              {% for cell in row %}
+              <td>{{ cell }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {% endif %}
+
+    {{ content }}
+  </div>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var filter = document.getElementById('spec-filter');
+  var table = document.getElementById('spec-table');
+  if (!filter || !table) return;
+
+  filter.addEventListener('keyup', function() {
+    var query = this.value.toLowerCase();
+    var rows = table.querySelectorAll('tbody tr');
+    rows.forEach(function(row) {
+      var text = row.textContent.toLowerCase();
+      row.style.display = text.indexOf(query) > -1 ? '' : 'none';
+    });
+  });
+
+  // Sortable table
+  var headers = table.querySelectorAll('th');
+  headers.forEach(function(th, idx) {
+    th.style.cursor = 'pointer';
+    th.addEventListener('click', function() {
+      var tbody = table.querySelector('tbody');
+      var rows = Array.from(tbody.querySelectorAll('tr'));
+      var asc = th.classList.contains('sort-asc');
+      headers.forEach(function(h) { h.classList.remove('sort-asc','sort-desc'); });
+      th.classList.add(asc ? 'sort-desc' : 'sort-asc');
+      rows.sort(function(a, b) {
+        var va = a.cells[idx].textContent.trim();
+        var vb = b.cells[idx].textContent.trim();
+        var na = parseFloat(va), nb = parseFloat(vb);
+        if (!isNaN(na) && !isNaN(nb)) return asc ? nb - na : na - nb;
+        return asc ? vb.localeCompare(va) : va.localeCompare(vb);
+      });
+      rows.forEach(function(r) { tbody.appendChild(r); });
+    });
+  });
+});
+</script>

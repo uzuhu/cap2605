@@ -1,0 +1,29 @@
+<div class="specs-filter-bar">
+  <input type="text" id="spec-filter" class="spec-filter-input" placeholder="搜索型号 / Search by capacitance or size...">
+  <span class="spec-filter-count" id="spec-count"></span>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var input = document.getElementById('spec-filter');
+  var table = document.getElementById('spec-table');
+  var count = document.getElementById('spec-count');
+  if (!input || !table || !count) return;
+  function updateCount() {
+    var visible = table.querySelectorAll('tbody tr:not([style*="display: none"])').length;
+    var total = table.querySelectorAll('tbody tr').length;
+    count.textContent = visible + ' / ' + total + ' items';
+  }
+  updateCount();
+  input.addEventListener('keyup', function() {
+    var q = this.value.toLowerCase();
+    var rows = table.querySelectorAll('tbody tr');
+    var total = rows.length;
+    var shown = 0;
+    rows.forEach(function(r) {
+      if (r.textContent.toLowerCase().indexOf(q) > -1) { r.style.display = ''; shown++; }
+      else { r.style.display = 'none'; }
+    });
+    count.textContent = shown + ' / ' + total + ' items';
+  });
+});
+</script>

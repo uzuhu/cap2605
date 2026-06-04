@@ -1,0 +1,70 @@
+- title: 首页
+  url: /
+- title: 产品中心
+  children:
+    - title: 牛角型电容 (Snap-in)
+      url: /products/snap-in/
+    - title: 螺栓型电容 (Screw)
+      url: /products/screw/
+    - title: CD292 (LC型 标准品)
+      url: /products/snap-in/cd292/
+    - title: CD293 (LD型 Low ESR)
+      url: /products/snap-in/cd293/
+    - title: CD294 (LE型 长寿命)
+      url: /products/snap-in/cd294/
+    - title: CD295 (LF型 高纹波)
+      url: /products/snap-in/cd295/
+    - title: CD296 (LG型 大容量)
+      url: /products/snap-in/cd296/
+    - title: CD297 (LH型 高电压)
+      url: /products/snap-in/cd297/
+    - title: CD298 (LI型 超高压)
+      url: /products/snap-in/cd298/
+    - title: CD17FX (FX型 特殊品)
+      url: /products/snap-in/cd17fx/
+    - title: CD135 (BP型 标准品)
+      url: /products/screw/cd135/
+    - title: CD136 (PK型 高纹波)
+      url: /products/screw/cd136/
+    - title: CD13N (GC型 标准品)
+      url: /products/screw/cd13n/
+    - title: CD13NH (GE型 高温品)
+      url: /products/screw/cd13nh/
+    - title: CD13L (GF型 长寿命)
+      url: /products/screw/cd13l/
+    - title: CD13HL (GG型 超长寿命)
+      url: /products/screw/cd13hl/
+    - title: CD92 (GA型 低压大容量)
+      url: /products/screw/cd92/
+    - title: CD92L (GD型 超长寿命低压)
+      url: /products/screw/cd92l/
+    - title: CD98SK (GK型 超级电容)
+      url: /products/screw/cd98sk/
+- title: 应用领域
+  children:
+    - title: 按行业分类
+      url: /applications/by-industry/
+    - title: 按设备分类
+      url: /applications/by-equipment/
+    - title: 工业电源
+      url: /applications/by-industry/industrial-power/
+    - title: 新能源
+      url: /applications/by-industry/renewable-energy/
+    - title: UPS不间断电源
+      url: /applications/by-industry/ups-systems/
+    - title: 电焊设备
+      url: /applications/by-industry/welding-equipment/
+    - title: 变频器
+      url: /applications/by-industry/frequency-converter/
+    - title: 医疗设备
+      url: /applications/by-industry/medical-equipment/
+- title: 技术资料
+  children:
+    - title: 型号命名规则
+      url: /technical/part-number-system/
+    - title: 使用注意事项
+      url: /technical/guidelines/
+    - title: 端子尺寸图
+      url: /technical/terminal-dimensions/
+- title: 联系我们
+  url: /contact/
