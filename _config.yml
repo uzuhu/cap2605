@@ -13,47 +13,19 @@ logo_subtext: 华裕电子
 url: "https://capacitormanufacturer.com"
 baseurl: ""
 github_username: uzuhu
-repository: uzuhu/uzuhu.github.io
+repository: uzuhu/cap2605
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-permalink: /:categories/:title/
-plugins: []
-
-# Collections
-collections:
-  snap_in:
-    output: true
-    permalink: /products/snap-in/:path/
-  screw:
-    output: true
-    permalink: /products/screw/:path/
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-  - scope:
-      path: "_snap_in"
-    values:
-      layout: product
-      type: snap-in
-  - scope:
-      path: "_screw"
-    values:
-      layout: product
-      type: screw
+permalink: /:title/
 
 exclude:
   - pdf/
-  - extract_pdfs.py
+  - _html_preview/
+  - build_static.py
   - 要求.txt
   - vendor/
-  - Gemfile
-  - Gemfile.lock
-  - README.md
   - .workbuddy/
