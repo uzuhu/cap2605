@@ -1,0 +1,41 @@
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <a href="tel:{{ site.phone }}">Tel: {{ site.phone }}</a>
+    <a href="tel:{{ site.mobile }}">Mobile: {{ site.mobile }}</a>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">HUAYU<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+      <li class="nav-dropdown">
+        <a href="{{ '/products/' | relative_url }}" {% if page.url contains '/products' %}class="active"{% endif %}>Products <span class="caret">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ '/products/#snap-in' | relative_url }}">Snap-In Series</a></li>
+          <li><a href="{{ '/products/#screw' | relative_url }}">Screw Terminal Series</a></li>
+          <li><a href="{{ '/products/compare/' | relative_url }}">Parameter Comparison</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="{{ '/applications/' | relative_url }}" {% if page.url contains '/applications' %}class="active"{% endif %}>Applications <span class="caret">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ '/applications/inverter/' | relative_url }}">Inverter & VFD</a></li>
+          <li><a href="{{ '/applications/ups/' | relative_url }}">UPS & Power Supply</a></li>
+          <li><a href="{{ '/applications/welding/' | relative_url }}">Welding Equipment</a></li>
+          <li><a href="{{ '/applications/industrial/' | relative_url }}">Industrial Automation</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ '/technical/' | relative_url }}" {% if page.url contains '/technical' %}class="active"{% endif %}>Technical</a></li>
+      <li><a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About Us</a></li>
+      <li><a href="{{ '/contact/' | relative_url }}" {% if page.url contains '/contact' %}class="active"{% endif %}>Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,43 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">HUAYU<span>.</span></div>
+        <p>Nantong Huayu Electronics Co., Ltd. (formerly Nantong Huayu Capacitor Factory), founded in 1987. Professional manufacturer of snap-in and screw terminal aluminum electrolytic capacitors, specializing in custom specifications.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/products/' | relative_url }}">Products</a></li>
+          <li><a href="{{ '/applications/' | relative_url }}">Applications</a></li>
+          <li><a href="{{ '/technical/' | relative_url }}">Technical</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/products/#snap-in' | relative_url }}">Snap-In Series</a></li>
+          <li><a href="{{ '/products/#screw' | relative_url }}">Screw Terminal Series</a></li>
+          <li><a href="{{ '/products/compare/' | relative_url }}">Parameter Comparison</a></li>
+          <li><a href="{{ '/technical/' | relative_url }}">Terminal Dimensions</a></li>
+          <li><a href="{{ '/pdf/catalogue.pdf' | relative_url }}" target="_blank">Full Catalogue (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <p>{{ site.address }}</p>
+        <p style="margin-top:10px;">
+          Tel: <a href="tel:{{ site.phone }}">{{ site.phone }}</a><br>
+          Mobile: <a href="tel:{{ site.mobile }}">{{ site.mobile }}</a><br>
+          Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; {{ 'now' | date: '%Y' }} Nantong Huayu Electronics Co., Ltd. All Rights Reserved.
+    </div>
+  </div>
+</footer>
