@@ -41,7 +41,9 @@ keywords: 铝电解电容, 牛角型电容, 螺栓型电容, Snap-in capacitor, 
     {% assign snap_products = "CD292LC,CD293LD,CD294LE,CD295LF,CD296LG,CD297LH,CD298LI,CD17FXFX" | split: "," %}
     {% assign snap_names = "标准品,Low ESR,长寿命,高纹波,大容量,高电压,超高压,特殊品" | split: "," %}
     {% for p in snap_products %}
-    <a href="/products/snap-in/{{ p | slice: 0,5 | downcase }}/" class="product-card">
+    {% assign p_slug = p | slice: 0,5 | downcase %}
+    {% capture p_url %}/products/snap-in/{{ p_slug }}/{% endcapture %}
+    <a href="{{ p_url | relative_url }}" class="product-card">
       <strong>{{ p | slice: 0,5 }}</strong>
       <span>{{ p | slice: 5,2 }}型 - {{ snap_names[forloop.index0] }}</span>
     </a>
@@ -53,7 +55,9 @@ keywords: 铝电解电容, 牛角型电容, 螺栓型电容, Snap-in capacitor, 
     {% assign screw_products = "CD135BP,CD136PK,CD13NGC,CD13NHGE,CD13LGF,CD13HLGG,CD92GA,CD92LGD,CD98SKGK" | split: "," %}
     {% assign screw_names = "标准品,高纹波,标准品,高温品,长寿命,超长寿命,低压大容量,长寿命低压,超级电容" | split: "," %}
     {% for p in screw_products %}
-    <a href="/products/screw/{{ p | slice: 0,5 | downcase }}/" class="product-card">
+    {% assign p_slug = p | slice: 0,5 | downcase %}
+    {% capture p_url %}/products/screw/{{ p_slug }}/{% endcapture %}
+    <a href="{{ p_url | relative_url }}" class="product-card">
       <strong>{{ p | slice: 0,5 }}</strong>
       <span>{{ p | slice: 5,2 }}型 - {{ screw_names[forloop.index0] }}</span>
     </a>
