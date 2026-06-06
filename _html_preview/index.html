@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>首页 &mdash; 南通华裕电子有限公司</title>
+<meta name="description" content="南通华裕电子 — 专注牛角型和螺栓型铝电解电容器，始于1987年">
+<style>
+:root{--bg:#fff;--text:#1a1a1a;--accent:#c0392b;--accent2:#2c3e50;--border:#ddd;--light:#f8f9fa;--muted:#666;--radius:4px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:13px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg)}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* Header */
+header{background:var(--accent2);color:#fff;padding:0}
+header .container{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;flex-wrap:wrap}
+header .logo{font-size:16px;font-weight:700;color:#fff}
+header .logo span{font-weight:400;font-size:12px;opacity:.7;display:block}
+nav{display:flex;gap:2px;flex-wrap:wrap}
+nav a{color:#fff;padding:6px 12px;border-radius:var(--radius);font-size:12px;transition:background .2s}
+nav a:hover,nav a.active{background:rgba(255,255,255,.15);text-decoration:none}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--accent2),#34495e);color:#fff;padding:48px 0;text-align:center}
+.hero h1{font-size:28px;margin-bottom:8px}.hero p{font-size:14px;opacity:.85;max-width:700px;margin:0 auto}
+
+/* Cards */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding:32px 0}
+.card{border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:box-shadow .2s}
+.card:hover{box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.card h3{font-size:14px;margin-bottom:6px;color:var(--accent2)}
+.card p{font-size:12px;color:var(--muted);line-height:1.6}
+.card .tag{display:inline-block;background:var(--light);color:var(--muted);font-size:11px;padding:2px 8px;border-radius:3px;margin:4px 4px 0 0}
+
+/* Sections */
+section{padding:40px 0}
+section h2{font-size:20px;margin-bottom:20px;color:var(--accent2);border-bottom:2px solid var(--accent);padding-bottom:8px;display:inline-block}
+section h3{font-size:15px;margin:24px 0 12px;color:var(--accent2)}
+
+/* Tables */
+table{width:100%;border-collapse:collapse;font-size:12px;margin:16px 0}
+th,td{padding:8px 10px;text-align:left;border:1px solid var(--border)}
+th{background:var(--accent2);color:#fff;font-weight:600;cursor:pointer;white-space:nowrap;user-select:none}
+th.sorted::after{content:' \\25B2';font-size:10px}
+th.sorted-desc::after{content:' \\25BC';font-size:10px}
+tr:nth-child(even){background:var(--light)}
+tr:hover{background:#eef2f7}
+.search-bar{margin:16px 0;display:flex;gap:8px;align-items:center}
+.search-bar input{padding:6px 12px;border:1px solid var(--border);border-radius:var(--radius);font-size:12px;width:260px}
+
+/* Footer */
+footer{background:var(--accent2);color:#fff;padding:24px 0;margin-top:48px;font-size:11px;text-align:center;line-height:2}
+footer a{color:#ccc}
+
+/* Breadcrumb */
+.breadcrumb{font-size:11px;color:var(--muted);padding:12px 0}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb span{color:var(--text)}
+
+/* Product detail */
+.prod-hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:24px 0;align-items:start}
+.prod-hero img{width:100%;max-width:300px;border:1px solid var(--border);border-radius:var(--radius)}
+.prod-meta{font-size:12px}.prod-meta h1{font-size:22px;margin-bottom:4px}
+.prod-meta .series{color:var(--muted);margin-bottom:12px}
+.spec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;margin:12px 0}
+.spec-item{background:var(--light);padding:8px 12px;border-radius:var(--radius)}
+.spec-item .label{font-size:10px;color:var(--muted);text-transform:uppercase}
+.spec-item .value{font-size:13px;font-weight:600}
+
+/* Filters row */
+.filter-row{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0;align-items:center;font-size:12px}
+.filter-row label{font-weight:600;margin-right:4px}
+.filter-row select{padding:4px 8px;border:1px solid var(--border);border-radius:3px;font-size:12px}
+
+/* Back to top */
+.back-top{text-align:right;font-size:11px;padding:8px 0}
+.back-top a{color:var(--muted)}
+
+/* Mobile */
+@media(max-width:768px){
+  .hero h1{font-size:22px}.hero{padding:32px 0}
+  .card-grid{grid-template-columns:1fr}
+  .prod-hero{grid-template-columns:1fr}.prod-hero img{max-width:200px}
+  header .container{flex-direction:column;gap:8px}
+  nav{justify-content:center}
+  table{font-size:11px}th,td{padding:6px 8px}
+  .search-bar{flex-direction:column;align-items:stretch}
+  .search-bar input{width:100%}
+  .filter-row{flex-direction:column}
+}
+@media(max-width:480px){
+  .hero h1{font-size:18px}
+  .spec-grid{grid-template-columns:1fr 1fr}
+  th,td{padding:4px 6px;font-size:10px}
+}
+
+/* Print */
+@media print{header,footer,.breadcrumb,.search-bar,.filter-row{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="/" style="color:#fff;text-decoration:none" class="logo">
+      南通华裕电子<span>Nantong Huayu Electronics · Since 1987</span>
+    </a>
+    <nav><a href="/" class="active">首页</a><a href="/products/">产品中心</a><a href="/applications/">应用领域</a><a href="/technical/">技术资料</a><a href="/contact/">联系我们</a></nav>
+  </div>
+</header>
+<main class="container">
+
+
+<section class="hero">
+  <h1>铝电解电容器专业制造商</h1>
+  <p>南通华裕电子始于1987年，专注牛角型（Snap-in）和螺栓型（Screw Terminal）铝电解电容器研发与制造，产品覆盖低压至高压全系列，为全球工业客户提供可靠解决方案。</p>
+</section>
+
+<section>
+  <h2>产品系列</h2>
+  <p style="font-size:12px;color:var(--muted);margin-bottom:16px">共 17 个产品系列，覆盖牛角型和螺栓型两大类别</p>
+  <div class="card-grid">
+    
+      <div class="card">
+        <h3><a href="/products/snap-in/cd292/">CD292</a></h3>
+        <span class="tag">牛角型</span>
+        <p>标准品，通用型牛角电容</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/snap-in/cd293/">CD293</a></h3>
+        <span class="tag">牛角型</span>
+        <p>高压型，适用于开关电源</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/snap-in/cd294/">CD294</a></h3>
+        <span class="tag">牛角型</span>
+        <p>高温高压型，105°C工作</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/snap-in/cd295/">CD295</a></h3>
+        <span class="tag">牛角型</span>
+        <p>大容量型，低电压大容量</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/snap-in/cd296/">CD296</a></h3>
+        <span class="tag">牛角型</span>
+        <p>长寿命型，85°C下3000小时</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/snap-in/cd297/">CD297</a></h3>
+        <span class="tag">牛角型</span>
+        <p>超长寿命型，105°C下5000小时</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/snap-in/cd298/">CD298</a></h3>
+        <span class="tag">牛角型</span>
+        <p>宽电压型，涵盖160-500V</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/snap-in/cd17fx/">CD17FX</a></h3>
+        <span class="tag">牛角型</span>
+        <p>小型化，狭窄空间安装</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd135/">CD135</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>低压大容量标准品</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd136/">CD136</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>高压标准品，通用螺栓型</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd13n/">CD13N</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>长寿命型，5000小时</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd13nh/">CD13NH</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>高温长寿命型</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd13l/">CD13L</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>超长寿命型，10000小时</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd13hl/">CD13HL</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>高温超长寿命旗舰型</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd92/">CD92</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>宽电压标准品</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd92l/">CD92L</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>宽电压长寿命型</p>
+      </div>
+      <div class="card">
+        <h3><a href="/products/screw/cd98sk/">CD98SK</a></h3>
+        <span class="tag">螺栓型</span>
+        <p>高纹波电流型</p>
+      </div>
+  </div>
+</section>
+
+<section>
+  <h2>应用领域</h2>
+  <div class="card-grid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))">
+    <div class="card">
+      <h3><a href="/applications/by-industry/industrial-power/">工业电源</a></h3>
+      <p>大功率开关电源直流滤波与储能</p>
+    </div>
+    <div class="card">
+      <h3><a href="/applications/by-industry/renewable-energy/">新能源</a></h3>
+      <p>光伏逆变器、风电变流器直流支撑</p>
+    </div>
+    <div class="card">
+      <h3><a href="/applications/by-industry/ups-systems/">UPS系统</a></h3>
+      <p>在线式UPS直流母线滤波</p>
+    </div>
+    <div class="card">
+      <h3><a href="/applications/by-industry/welding-equipment/">电焊设备</a></h3>
+      <p>逆变焊机直流滤波，大电流脉动</p>
+    </div>
+    <div class="card">
+      <h3><a href="/applications/by-industry/frequency-converter/">变频器</a></h3>
+      <p>工业变频器直流母线滤波</p>
+    </div>
+    <div class="card">
+      <h3><a href="/applications/by-industry/medical-equipment/">医疗设备</a></h3>
+      <p>医疗电源高可靠性滤波</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>公司实力</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin:16px 0">
+    <div style="text-align:center;padding:20px;background:var(--light);border-radius:var(--radius)">
+      <div style="font-size:28px;font-weight:700;color:var(--accent)">1987</div>
+      <div style="font-size:11px;color:var(--muted)">成立年份</div>
+    </div>
+    <div style="text-align:center;padding:20px;background:var(--light);border-radius:var(--radius)">
+      <div style="font-size:28px;font-weight:700;color:var(--accent)">17</div>
+      <div style="font-size:11px;color:var(--muted)">产品系列</div>
+    </div>
+    <div style="text-align:center;padding:20px;background:var(--light);border-radius:var(--radius)">
+      <div style="font-size:28px;font-weight:700;color:var(--accent)">10-500V</div>
+      <div style="font-size:11px;color:var(--muted)">电压覆盖范围</div>
+    </div>
+    <div style="text-align:center;padding:20px;background:var(--light);border-radius:var(--radius)">
+      <div style="font-size:28px;font-weight:700;color:var(--accent)">10000h</div>
+      <div style="font-size:11px;color:var(--muted)">最长寿命@105°C</div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <strong>南通华裕电子有限公司</strong><br>
+    地址：江苏省南通市 · 电话：+86-513-86310599 · 手机：+86-18912241508<br>
+    邮箱：<a href="mailto:zuwho@hotmail.com">zuwho@hotmail.com</a> · 联系人：祖先生
+  </div>
+</footer>
+<script>
+// Simple table sort
+document.querySelectorAll('th.sortable').forEach(th => {
+  th.addEventListener('click', () => {
+    const table = th.closest('table');
+    const tbody = table.querySelector('tbody');
+    const col = Array.from(th.parentNode.children).indexOf(th);
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const isAsc = th.classList.contains('sorted');
+    table.querySelectorAll('th').forEach(h => h.classList.remove('sorted','sorted-desc'));
+    th.classList.add(isAsc ? 'sorted-desc' : 'sorted');
+    rows.sort((a,b) => {
+      const va = a.children[col]?.textContent.trim() || '';
+      const vb = b.children[col]?.textContent.trim() || '';
+      const na = parseFloat(va.replace(/[^0-9.-]/g,''));
+      const nb = parseFloat(vb.replace(/[^0-9.-]/g,''));
+      if (!isNaN(na) && !isNaN(nb)) return isAsc ? nb-na : na-nb;
+      return isAsc ? vb.localeCompare(va) : va.localeCompare(vb);
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+});
+// Simple search filter
+document.querySelectorAll('.spec-search').forEach(input => {
+  input.addEventListener('input', () => {
+    const val = input.value.toLowerCase();
+    const table = input.closest('.search-bar').nextElementSibling;
+    if (!table) return;
+    table.querySelectorAll('tbody tr').forEach(tr => {
+      tr.style.display = tr.textContent.toLowerCase().includes(val) ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
