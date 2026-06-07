@@ -272,7 +272,7 @@ table { width: auto; max-width: 100%; border-collapse: collapse; font-size: var(
 
 .spec-table th {
   background: var(--c-bg-alt); text-align: left; padding: 6px 10px; border: 1px solid var(--c-border);
-  width: 30%; font-weight: 600; white-space: nowrap;
+  width: auto; font-weight: 600; white-space: nowrap;
 }
 .spec-table td { padding: 6px 10px; border: 1px solid var(--c-border); }
 
@@ -291,7 +291,8 @@ table { width: auto; max-width: 100%; border-collapse: collapse; font-size: var(
 main > article table,
 .product-content > section table,
 .page-content table {
-  width: 100%; border-collapse: collapse; font-size: var(--font-size-sm);
+  width: auto; max-width: 100%; border-collapse: collapse; font-size: var(--font-size-sm);
+  table-layout: auto;
   margin: 8px 0;
 }
 main > article table th,
