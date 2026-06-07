@@ -139,7 +139,12 @@ strong { font-weight: 600; color: var(--c-text); }
 .breadcrumb [aria-current] { color: var(--c-text); font-weight: 500; }
 
 /* --- Main Content --- */
-main { max-width: var(--max-width); margin: 0 auto; padding: 0 20px 40px; min-height: 60vh; }
+.content-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+main { padding: 0 0 40px; min-height: 60vh; }
 main > article { padding-top: 10px; }
 
 /* Markdown content typography */
