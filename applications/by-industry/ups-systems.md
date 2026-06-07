@@ -1,7 +1,8 @@
 ---
 layout: default
-title: UPS电容方案
+title: UPS 不间断电源
 breadcrumb_title: UPS Systems
+nav_order: 3
 ---
 # UPS不间断电源电容方案
 

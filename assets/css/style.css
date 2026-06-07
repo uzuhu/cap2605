@@ -330,6 +330,23 @@ main > article table tbody tr:nth-child(even),
 .page-content { margin: 16px 0; }
 .page-content table { margin: 10px 0; }
 
+/* Formula block (used in guidelines.md) */
+.formula-block {
+  background: var(--c-bg-alt);
+  border-left: 3px solid var(--c-primary);
+  padding: 10px 16px;
+  margin: 10px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  overflow-x: auto;
+}
+.formula-block code {
+  font-size: 1rem;
+  background: none;
+  padding: 0;
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
 /* --- Applications --- */
 .app-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin: 14px 0; }
 .app-card {

@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 电焊机电容方案
+title: 电焊机
 breadcrumb_title: Welder
+nav_order: 3
 ---
 # 电焊机电容选型
 

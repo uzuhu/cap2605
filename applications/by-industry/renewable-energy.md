@@ -1,8 +1,9 @@
 ---
 layout: default
-title: 新能源电容方案
+title: 新能源
 breadcrumb_title: Renewable Energy
 description: 光伏、风电等新能源设备铝电解电容选型指南
+nav_order: 2
 ---
 
 # 新能源领域电容方案

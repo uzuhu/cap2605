@@ -1,8 +1,9 @@
 ---
 layout: default
-title: 工业电源电容方案
+title: 工业电源
 breadcrumb_title: Industrial Power
 description: 工业电源设备铝电解电容选型指南
+nav_order: 1
 ---
 
 # 工业电源电容方案

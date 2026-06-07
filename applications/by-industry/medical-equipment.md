@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 医疗设备电容方案
+title: 医疗设备
 breadcrumb_title: Medical Equipment
+nav_order: 6
 ---
 # 医疗设备电容方案
 

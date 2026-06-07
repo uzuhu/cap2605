@@ -9,27 +9,94 @@
       <span class="nav-toggle-bar"></span>
     </button>
     <ul class="nav-menu">
-      {% for item in site.data.navigation %}
-      <li class="nav-item{% if item.children %} has-dropdown{% endif %}">
-        <a href="{{ item.url | relative_url }}"{% if item.children %} aria-haspopup="true" aria-expanded="false"{% endif %}>{{ item.title }}</a>
-        {% if item.children %}
+
+      {%- comment -%} 首页 {%- endcomment -%}
+      <li class="nav-item"><a href="{{ '/' | relative_url }}">首页</a></li>
+
+      {%- comment -%} 产品中心（静态，型号固定不常变） {%- endcomment -%}
+      <li class="nav-item has-dropdown">
+        <a href="{{ '/products/' | relative_url }}" aria-haspopup="true">产品中心</a>
         <ul class="nav-dropdown">
-          {% for child in item.children %}
-          <li class="{% if child.children %}has-dropdown{% endif %}">
-            <a href="{{ child.url | relative_url }}"{% if child.children %} aria-haspopup="true" aria-expanded="false"{% endif %}>{{ child.title }}{% if child.children %} <span class="caret">▸</span>{% endif %}</a>
-            {% if child.children %}
+
+          {%- comment -%} 牛角型 {%- endcomment -%}
+          <li class="has-dropdown">
+            <a href="{{ '/products/snap-in/' | relative_url }}" aria-haspopup="true">牛角型 Snap-in <span class="caret">▸</span></a>
             <ul class="nav-dropdown nav-dropdown-nested">
-              {% for grandchild in child.children %}
-              <li><a href="{{ grandchild.url | relative_url }}">{{ grandchild.title }}</a></li>
-              {% endfor %}
+              {%- assign snap_in_products = site.pages | where_exp: "p", "p.url contains '/products/snap-in/'" | where_exp: "p", "p.url != '/products/snap-in/'" | where_exp: "p", "p.url != '/products/snap-in/index.html'" | sort: "title" -%}
+              {%- for p in snap_in_products -%}
+                {%- unless p.url contains 'index' -%}
+              <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                {%- endunless -%}
+              {%- endfor -%}
             </ul>
-            {% endif %}
           </li>
-          {% endfor %}
+
+          {%- comment -%} 螺栓型 {%- endcomment -%}
+          <li class="has-dropdown">
+            <a href="{{ '/products/screw/' | relative_url }}" aria-haspopup="true">螺栓型 Screw <span class="caret">▸</span></a>
+            <ul class="nav-dropdown nav-dropdown-nested">
+              {%- assign screw_products = site.pages | where_exp: "p", "p.url contains '/products/screw/'" | where_exp: "p", "p.url != '/products/screw/'" | where_exp: "p", "p.url != '/products/screw/index.html'" | sort: "title" -%}
+              {%- for p in screw_products -%}
+                {%- unless p.url contains 'index' -%}
+              <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                {%- endunless -%}
+              {%- endfor -%}
+            </ul>
+          </li>
+
         </ul>
-        {% endif %}
       </li>
-      {% endfor %}
+
+      {%- comment -%} 应用领域（动态：自动扫描by-industry和by-equipment目录） {%- endcomment -%}
+      <li class="nav-item has-dropdown">
+        <a href="{{ '/applications/' | relative_url }}" aria-haspopup="true">应用领域</a>
+        <ul class="nav-dropdown">
+
+          {%- comment -%} 按行业 {%- endcomment -%}
+          <li class="has-dropdown">
+            <a href="{{ '/applications/by-industry/' | relative_url }}" aria-haspopup="true">按行业 <span class="caret">▸</span></a>
+            <ul class="nav-dropdown nav-dropdown-nested">
+              {%- assign industry_pages = site.pages | where_exp: "p", "p.url contains '/applications/by-industry/'" | sort: "nav_order" -%}
+              {%- for p in industry_pages -%}
+                {%- unless p.url == '/applications/by-industry/' or p.url contains '/index' -%}
+              <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                {%- endunless -%}
+              {%- endfor -%}
+            </ul>
+          </li>
+
+          {%- comment -%} 按设备 {%- endcomment -%}
+          <li class="has-dropdown">
+            <a href="{{ '/applications/by-equipment/' | relative_url }}" aria-haspopup="true">按设备 <span class="caret">▸</span></a>
+            <ul class="nav-dropdown nav-dropdown-nested">
+              {%- assign equipment_pages = site.pages | where_exp: "p", "p.url contains '/applications/by-equipment/'" | sort: "nav_order" -%}
+              {%- for p in equipment_pages -%}
+                {%- unless p.url == '/applications/by-equipment/' or p.url contains '/index' -%}
+              <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                {%- endunless -%}
+              {%- endfor -%}
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      {%- comment -%} 技术资料（动态：自动扫描technical目录） {%- endcomment -%}
+      <li class="nav-item has-dropdown">
+        <a href="{{ '/technical/' | relative_url }}" aria-haspopup="true">技术资料</a>
+        <ul class="nav-dropdown">
+          {%- assign tech_pages = site.pages | where_exp: "p", "p.url contains '/technical/'" | sort: "nav_order" -%}
+          {%- for p in tech_pages -%}
+            {%- unless p.url == '/technical/' or p.url contains '/index' -%}
+          <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+            {%- endunless -%}
+          {%- endfor -%}
+        </ul>
+      </li>
+
+      {%- comment -%} 联系我们 {%- endcomment -%}
+      <li class="nav-item"><a href="{{ '/contact/' | relative_url }}">联系我们</a></li>
+
     </ul>
   </div>
 </nav>

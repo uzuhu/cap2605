@@ -3,13 +3,14 @@ layout: default
 title: 端子尺寸图
 breadcrumb_title: Terminal Dimensions
 description: 铝电解电容端子尺寸图 — 牛角型和螺栓型
+nav_order: 3
 ---
 
 # 端子尺寸图 Terminal Dimensions
 
 ## 牛角型 Snap-in Terminal Dimensions
 
-{% include image_placeholder.html id="snap-in-terminal" text="牛角型 Snap-in 端子尺寸图" size="800x500px" %}
+<!-- 牛角型端子尺寸图（图片待添加） -->
 
 ### 牛角型端子尺寸表 (单位: mm)
 
@@ -19,7 +20,7 @@ description: 铝电解电容端子尺寸图 — 牛角型和螺栓型
 
 ## 螺栓型 Screw Terminal Dimensions
 
-{% include image_placeholder.html id="screw-terminal" text="螺栓型 Screw Terminal 端子尺寸图" size="800x500px" %}
+<!-- 螺栓型端子尺寸图（图片待添加） -->
 
 ### 螺栓型端子尺寸表 (单位: mm)
 

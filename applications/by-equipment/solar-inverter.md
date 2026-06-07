@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 光伏逆变器电容方案
+title: 光伏逆变器
 breadcrumb_title: Solar Inverter
+nav_order: 5
 ---
 # 光伏逆变器电容选型
 

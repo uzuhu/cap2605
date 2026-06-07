@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 伺服驱动器电容方案
+title: 伺服驱动器
 breadcrumb_title: Servo Drive
+nav_order: 4
 ---
 # 伺服驱动器电容选型
 

@@ -3,6 +3,7 @@ layout: default
 title: 使用注意事项
 breadcrumb_title: Guidelines for Using
 description: 铝电解电容使用注意事项 — Guidelines for Using
+nav_order: 2
 ---
 
 # 使用注意事项 Guidelines for Using
@@ -43,12 +44,16 @@ description: 铝电解电容使用注意事项 — Guidelines for Using
 
 计算公式：
 
-$$L_2 = L_1 \times 2^{\frac{T_1 - T_2}{10}}$$
+<div class="formula-block">
+  <code>L₂ = L₁ × 2^((T₁ − T₂) / 10)</code>
+</div>
 
-- L₁ — 额定温度下的寿命
-- L₂ — 实际温度下的寿命
-- T₁ — 额定使用温度
-- T₂ — 实际使用温度
+| 变量 | 含义 |
+|------|------|
+| L₁ | 额定温度下的寿命 |
+| L₂ | 实际温度下的寿命 |
+| T₁ | 额定使用温度 (°C) |
+| T₂ | 实际使用温度 (°C) |
 
 ## 8. 核对工作频率 Check operating frequency.
 

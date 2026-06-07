@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 电焊设备电容方案
+title: 电焊设备
 breadcrumb_title: Welding Equipment
+nav_order: 5
 ---
 # 电焊设备电容方案
 

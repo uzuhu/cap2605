@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 逆变器电容方案
+title: 逆变器
 breadcrumb_title: Inverter
+nav_order: 1
 ---
 # 逆变器电容选型
 

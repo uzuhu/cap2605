@@ -3,13 +3,14 @@ layout: default
 title: 型号命名规则
 breadcrumb_title: Part Number System
 description: 南通华裕铝电解电容型号命名规则 — Part Number System
+nav_order: 1
 ---
 
 # 型号命名规则 Part Number System
 
 ## 命名格式
 
-{% include image_placeholder.html id="pn-format" text="型号命名规则示意图" size="800x400px" %}
+<!-- 命名规则图（图片待添加） -->
 
 ```
 BP 2G 682 M 077155 S

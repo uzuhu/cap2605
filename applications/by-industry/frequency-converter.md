@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 变频器电容方案
+title: 变频器
 breadcrumb_title: Frequency Converter
+nav_order: 4
 ---
 # 变频器电容方案
 
