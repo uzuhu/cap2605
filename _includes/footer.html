@@ -1,29 +1,5 @@
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-col">
-      <h3>{{ site.logo_text }}</h3>
-      <p>{{ site.subtitle }}</p>
-      <p class="footer-since">Since 1987</p>
-    </div>
-    <div class="footer-col">
-      <h3>联系我们</h3>
-      <p>{{ site.address }}</p>
-      <p>电话: {{ site.phone }}</p>
-      <p>手机: {{ site.mobile }}</p>
-      <p>邮箱: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-    </div>
-    <div class="footer-col">
-      <h3>快速链接</h3>
-      <ul>
-        <li><a href="{{ '/products/' | relative_url }}">全部产品</a></li>
-        <li><a href="{{ '/products/snap-in/' | relative_url }}">牛角型电容</a></li>
-        <li><a href="{{ '/products/screw/' | relative_url }}">螺栓型电容</a></li>
-        <li><a href="{{ '/technical/' | relative_url }}">技术资料</a></li>
-        <li><a href="mailto:{{ site.email }}">发送邮件</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    <p>{{ site.title }} &nbsp;|&nbsp; <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
   </div>
 </footer>
