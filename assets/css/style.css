@@ -268,7 +268,7 @@ main > article pre,
 /* --- Tables --- */
 .table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0; }
 
-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-sm); }
+table { width: auto; max-width: 100%; border-collapse: collapse; font-size: var(--font-size-sm); table-layout: auto; }
 
 .spec-table th {
   background: var(--c-bg-alt); text-align: left; padding: 6px 10px; border: 1px solid var(--c-border);
