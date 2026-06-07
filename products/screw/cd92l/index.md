@@ -2,8 +2,8 @@
 layout: default
 title: CD92L 螺栓型铝电解电容
 breadcrumb_title: CD92L
-description: CD92L系列为长寿命低压大容量螺栓型铝电解电容器，105℃下保证5000小时寿命，低ESR，容量最高可达330,000μF，专为大型UPS、储能系统等对寿命和容量都有较高要求的应用设计。
-keywords: CD92L长寿命低压,储能系统电解电容,大型UPS电容,长寿命螺栓电容,低压大容量
+description: CD92L系列为华裕电子螺栓型铝电解电容器，广泛应用于光伏逆变器、UPS、工业电源等领域。
+keywords: CD92L电容,螺栓型电解电容,铝电解电容器
 series: "CD92L"
 type: "screw"
 nav_order: 1
@@ -11,8 +11,8 @@ nav_order: 1
 
 <div class="product-header">
   <h1>CD92L 系列 螺栓型铝电解电容</h1>
-  <p class="product-type">Screw Terminal Type — 长寿命低压大容量型 Long Life Low Voltage</p>
-  <p class="product-subtitle">CD92L系列为长寿命低压大容量螺栓型铝电解电容器，105℃下保证5000小时寿命，低ESR，容量最高可达330,000μF，专为大型UPS、储能系统等对寿命和容量都有较高要求的应用设计。</p>
+  <p class="product-type">Screw Terminal Type</p>
+  <p class="product-subtitle">CD92L系列为华裕电子螺栓型铝电解电容器，具有优异的电气性能和可靠性，广泛应用于光伏逆变器、UPS、工业电源、变频器等对可靠性要求较高的场合。</p>
 </div>
 
 <div class="product-image-placeholder">
@@ -21,17 +21,17 @@ nav_order: 1
 </div>
 
 <section class="product-content">
-## 产品特点 Features
+
+## 产品特点
 
 <ul>
-  <li><strong>105℃ 5000小时（105℃）长寿命</strong> — 105℃ 5000小时（105℃） long life</li>
-  <li><strong>使用温度范围 -40~+105℃</strong> — Operating temp: -40~+105℃</li>
-  <li><strong>电压范围 16~100V</strong> — Voltage range: 16~100V</li>
-  <li><strong>容量范围 10,000~330,000μF</strong> — Capacitance: 10,000~330,000μF</li>
-  <li><strong>超大容量设计</strong> — Ultra-large capacitance design</li>
+  <li><strong>高可靠性</strong> — 严格的品质控制和全流程追溯</li>
+  <li><strong>宽温度范围</strong> — 适应各种工作环境</li>
+  <li><strong>低 ESR</strong> — 优异的高频特性</li>
+  <li><strong>长寿命设计</strong> — 高温下保证长时间可靠工作</li>
 </ul>
 
-## 技术规格 Specifications
+## 技术规格
 
 <div class="table-responsive">
 <table class="spec-table">
@@ -43,306 +43,199 @@ nav_order: 1
   </thead>
   <tbody>
     <tr><td>使用温度范围 Operating Temperature</td><td>-40~+105℃</td></tr>
-    <tr><td>额定电压 Rated Voltage</td><td>16~100V</td></tr>
-    <tr><td>标称容量 Nominal Capacitance</td><td>10,000~330,000μF</td></tr>
+    <tr><td>额定电压 Rated Voltage</td><td>详见额定值表</td></tr>
+    <tr><td>标称容量 Nominal Capacitance</td><td>详见额定值表</td></tr>
     <tr><td>容量偏差 Tolerance</td><td>±20% (M)</td></tr>
-    <tr><td>漏电流 Leakage Current</td><td>I≤0.01CV or 1.5mA, whichever is smaller</td></tr>
-    <tr><td>保证寿命 Load Life</td><td>5000小时（105℃）</td></tr>
+    <tr><td>保证寿命 Load Life</td><td>2000~10000小时</td></tr>
   </tbody>
 </table>
 </div>
 
-## 详细参数表 Standard Ratings
 
-### 额定值表 Rated Values (Table 1)
-<div class="table-responsive">
-<table class="spec-data-table">
-  <thead>
-    <tr>
-      <th>Item</th>
-      <th>Characteristics</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>使用温度范围 OperatingTemperature Range (℃)</td>
-      <td>-40~+85</td>
-    </tr>
-    <tr>
-      <td>额定电压 Rated Voltage(V)</td>
-      <td>10~100</td>
-    </tr>
-    <tr>
-      <td>标称容量 Nominal Capacitance(μF)</td>
-      <td>1,000~220,000</td>
-    </tr>
-    <tr>
-      <td>容量偏差 Capacitance Tolerance(20℃,120Hz)</td>
-      <td>±20%</td>
-    </tr>
-    <tr>
-      <td>漏电流 Leakage Current (μA)</td>
-      <td>I≤0.006CV+4mAor 5mA,whichever is smaller.(at20℃,after5minutes)</td>
-    </tr>
-    <tr>
-      <td>损耗角正切值 Dissipation Factor (20℃, 120Hz)</td>
-      <td>WV(V)</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>tanδ</td>
-    </tr>
-    <tr>
-      <td>耐久性 Load Life(+85℃)</td>
-      <td>时间 time</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>容量变化率Capacitance Change</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>漏电流Leakage Current</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>损耗角正切值Dissipation Factor</td>
-    </tr>
-    <tr>
-      <td>高温贮存 Shelf Life(+85℃)</td>
-      <td>时间 time</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>容量变化率Capacitance Change</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>漏电流Leakage Current</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>损耗角正切值Dissipation Factor</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>试验后：施加标称电压30分钟，于24至48小时之间测试。 After test: UR to be appliedfor30minutes,24 to 48 hoursbeforemeasurement.</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+## 额定值表 Rated Values
 
-### 额定值表 Rated Values (Table 2)
-<div class="table-responsive">
-<table class="spec-data-table">
-  <thead>
-    <tr>
-      <th>WV(V)</th>
-      <th>10</th>
-      <th>16</th>
-      <th>25</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Cap (μF)</td>
-      <td>Size</td>
-      <td>Size</td>
-      <td>Size</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>ΦDxL(mm)</td>
-      <td>ΦDxL(mm)</td>
-      <td>ΦDxL(mm)</td>
-    </tr>
-    <tr>
-      <td>1000</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>1500</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>2200</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>3300</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>4700</td>
-      <td>-</td>
-      <td>-</td>
-      <td>36x60</td>
-    </tr>
-    <tr>
-      <td>6800</td>
-      <td>-</td>
-      <td>-</td>
-      <td>36x60</td>
-    </tr>
-    <tr>
-      <td>10000</td>
-      <td>-</td>
-      <td>36x60</td>
-      <td>36x80</td>
-    </tr>
-    <tr>
-      <td>15000</td>
-      <td>36x60</td>
-      <td>36x80</td>
-      <td>36x100</td>
-    </tr>
-    <tr>
-      <td>22000</td>
-      <td>36x80</td>
-      <td>36x100</td>
-      <td>51x80</td>
-    </tr>
-    <tr>
-      <td>33000</td>
-      <td>36x100</td>
-      <td>51x80</td>
-      <td>51x100</td>
-    </tr>
-    <tr>
-      <td>47000</td>
-      <td>51x80</td>
-      <td>51x100</td>
-      <td>65X100</td>
-    </tr>
-    <tr>
-      <td>68000</td>
-      <td>51x100</td>
-      <td>65X100</td>
-      <td>65X100</td>
-    </tr>
-    <tr>
-      <td>100000</td>
-      <td>65X100</td>
-      <td>65X100</td>
-      <td>77x100</td>
-    </tr>
-    <tr>
-      <td>150000</td>
-      <td>65X100</td>
-      <td>77x100</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>220000</td>
-      <td>77x100</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-### 额定值表 Rated Values (Table 3)
 <div class="table-responsive">
 <table class="spec-data-table">
   <thead>
     <tr>
       <th>WV(V)</th>
       <th>50</th>
+      <th></th>
+      <th></th>
       <th>63</th>
+      <th></th>
+      <th></th>
       <th>100</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Cap(μF)</td>
       <td>Size</td>
+      <td>Impedance</td>
+      <td>Ripple</td>
       <td>Size</td>
+      <td>Impedance</td>
+      <td>Ripple</td>
       <td>Size</td>
+      <td>Impedance</td>
+      <td>Ripple</td>
     </tr>
     <tr>
       <td></td>
       <td>ΦDxL(mm)</td>
+      <td>Z(mΩ)</td>
+      <td>(A)</td>
       <td>ΦDxL(mm)</td>
+      <td>Z(mΩ)</td>
+      <td>(A)</td>
       <td>ΦDxL(mm)</td>
+      <td>Z(mΩ)</td>
+      <td>(A)</td>
     </tr>
     <tr>
       <td>1000</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
       <td>36x60</td>
+      <td>67</td>
+      <td>3.0</td>
     </tr>
     <tr>
       <td>1500</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
       <td>36x60</td>
+      <td>60</td>
+      <td>3.3</td>
     </tr>
     <tr>
       <td>2200</td>
       <td>-</td>
+      <td>-</td>
+      <td>-</td>
       <td>36x60</td>
+      <td>33</td>
+      <td>3.7</td>
       <td>36x80</td>
+      <td>42</td>
+      <td>4.6</td>
     </tr>
     <tr>
       <td>3300</td>
       <td>36x60</td>
+      <td>32</td>
+      <td>4.5</td>
       <td>36x60</td>
+      <td>30</td>
+      <td>3.7</td>
       <td>36x100</td>
+      <td>28</td>
+      <td>6.5</td>
     </tr>
     <tr>
       <td>4700</td>
       <td>36x60</td>
+      <td>33</td>
+      <td>4.5</td>
       <td>36x80</td>
+      <td>21</td>
+      <td>5.2</td>
       <td>51x80</td>
+      <td>25</td>
+      <td>7.4</td>
     </tr>
     <tr>
       <td>6800</td>
       <td>36x80</td>
+      <td>23</td>
+      <td>6</td>
       <td>36x100</td>
+      <td>15</td>
+      <td>7.5</td>
       <td>51x100</td>
+      <td>18</td>
+      <td>9.9</td>
     </tr>
     <tr>
       <td>10000</td>
       <td>36x100</td>
+      <td>17</td>
+      <td>7.5</td>
       <td>51x80</td>
+      <td>14</td>
+      <td>9.5</td>
       <td>65X100</td>
+      <td>11</td>
+      <td>15.0</td>
     </tr>
     <tr>
       <td>15000</td>
       <td>51x80</td>
+      <td>13</td>
+      <td>10</td>
       <td>51x100</td>
+      <td>10.5</td>
+      <td>13.5</td>
       <td>65X100</td>
+      <td>10</td>
+      <td>15.8</td>
     </tr>
     <tr>
       <td>22000</td>
       <td>51x100</td>
+      <td>10.5</td>
+      <td>15</td>
       <td>65X100</td>
+      <td>6</td>
+      <td>21</td>
       <td>77x100</td>
+      <td>8</td>
+      <td>20.5</td>
     </tr>
     <tr>
       <td>33000</td>
       <td>65X100</td>
+      <td>6</td>
+      <td>21</td>
       <td>65X100</td>
+      <td>6</td>
+      <td>22</td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>47000</td>
       <td>65X100</td>
+      <td>6</td>
+      <td>22</td>
       <td>77x100</td>
+      <td>4.5</td>
+      <td>30</td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>68000</td>
       <td>77x100</td>
+      <td>4.5</td>
+      <td>30</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -350,39 +243,59 @@ nav_order: 1
 </table>
 </div>
 
-## 应用场景 Applications
+## 频率系数 Frequency Coefficient
 
-CD92L 系列电容器凭借其优异的性能参数，广泛应用于以下领域：
+<div class="table-responsive">
+<table class="spec-data-table">
+  <thead>
+    <tr>
+      <th>Frequency(Hz)</th>
+      <th>50</th>
+      <th>100</th>
+      <th>400</th>
+      <th>1k</th>
+      <th>20k</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coefficient</td>
+      <td>0.70</td>
+      <td>1.00</td>
+      <td>1.08</td>
+      <td>1.10</td>
+      <td>1.15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+## 应用场景
+
+本系列电容器凭借其优异的性能参数，广泛应用于以下领域：
 
 <ul>
-  <li>大型UPS系统</li>
-  <li>储能系统 PCS</li>
-  <li>变频器直流支撑</li>
-  <li>电力调峰系统</li>
-  <li>工业电源滤波</li>
+  <li>光伏逆变器 PV Inverter</li>
+  <li>不间断电源 UPS</li>
+  <li>工业电源 Industrial Power</li>
+  <li>变频器 Inverter</li>
 </ul>
 
-## 选型指南 Selection Guide
-
-在选用 **CD92L** 系列产品时，建议重点考虑以下因素，以确保最佳性能和使用寿命：
+## 选型指南
 
 <ol>
-  <li><strong>额定电压 Voltage Rating：</strong>建议工作电压不超过额定电压的80%，每降低10℃工作温度，电容器寿命可延长约2倍。</li>
-  <li><strong>容量选择 Capacitance：</strong>根据实际电路需求选择合适容量，注意容量随频率和温度变化的关系，高频应用时容量会有所下降。</li>
-  <li><strong>纹波电流 Ripple Current：</strong>流过电容器的纹波电流有效值不应超过额定值，建议留有20%以上余量，以确保长期可靠性。</li>
-  <li><strong>工作温度 Operating Temperature：</strong>在低于额定最高温度的环境下使用，可显著延长电容器使用寿命。温度每降低10℃，寿命约延长2倍。</li>
-  <li><strong>外形尺寸 Dimensions：</strong>请根据PCB安装空间和散热条件选择合适的外形尺寸（φD×L），确保安装可靠。</li>
-  <li><strong>纹波电流频率特性 Frequency Characteristics：</strong>注意电容器的纹波电流额定值随频率变化，高频应用时请参考规格书中的频率系数表。</li>
+  <li><strong>额定电压：</strong>建议工作电压不超过额定电压的80%</li>
+  <li><strong>容量选择：</strong>根据实际电路需求选择合适容量</li>
+  <li><strong>纹波电流：</strong>流过电容器的纹波电流有效值不应超过额定值</li>
+  <li><strong>工作温度：</strong>在低于额定最高温度的环境下使用，可显著延长电容器使用寿命</li>
 </ol>
 
-## 相关资源 Related Resources
+## 相关资源
 
 <ul>
-  <li><a href="/technical/guidelines/">使用注意事项 Guidelines for Using</a> — 安装、焊接、存储的重要注意事项</li>
-  <li><a href="/technical/part-number-system/">型号命名规则 Part Number System</a> — 理解产品型号编码含义</li>
-  <li><a href="/technical/terminal-dimensions/">端子尺寸图 Terminal Dimensions</a> — 产品外形及安装尺寸</li>
+  <li><a href="/technical/guidelines/">使用注意事项</a></li>
+  <li><a href="/technical/part-number-system/">型号命名规则</a></li>
+  <li><a href="/technical/terminal-dimensions/">端子尺寸图</a></li>
 </ul>
-
-_如有特殊应用需求或定制化要求，请联系华裕电子技术团队获取专业支持。_
 
 </section>

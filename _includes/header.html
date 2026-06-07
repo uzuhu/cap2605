@@ -47,37 +47,14 @@
         </ul>
       </li>
 
-      {%- comment -%} 应用领域（动态：自动扫描by-industry和by-equipment目录） {%- endcomment -%}
+      {%- comment -%} 应用领域（动态：直接扫描applications目录下的所有文章） {%- endcomment -%}
       <li class="nav-item has-dropdown">
         <a href="{{ '/applications/' | relative_url }}" aria-haspopup="true">应用领域</a>
         <ul class="nav-dropdown">
-
-          {%- comment -%} 按行业 {%- endcomment -%}
-          <li class="has-dropdown">
-            <a href="{{ '/applications/by-industry/' | relative_url }}" aria-haspopup="true">按行业 <span class="caret">▸</span></a>
-            <ul class="nav-dropdown nav-dropdown-nested">
-              {%- assign industry_pages = site.pages | where_exp: "p", "p.url contains '/applications/by-industry/'" | sort: "nav_order" -%}
-              {%- for p in industry_pages -%}
-                {%- unless p.url == '/applications/by-industry/' or p.url contains '/index' -%}
-              <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-                {%- endunless -%}
-              {%- endfor -%}
-            </ul>
-          </li>
-
-          {%- comment -%} 按设备 {%- endcomment -%}
-          <li class="has-dropdown">
-            <a href="{{ '/applications/by-equipment/' | relative_url }}" aria-haspopup="true">按设备 <span class="caret">▸</span></a>
-            <ul class="nav-dropdown nav-dropdown-nested">
-              {%- assign equipment_pages = site.pages | where_exp: "p", "p.url contains '/applications/by-equipment/'" | sort: "nav_order" -%}
-              {%- for p in equipment_pages -%}
-                {%- unless p.url == '/applications/by-equipment/' or p.url contains '/index' -%}
-              <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-                {%- endunless -%}
-              {%- endfor -%}
-            </ul>
-          </li>
-
+          {%- assign app_pages = site.pages | where_exp: "p", "p.url contains '/applications/'" | where_exp: "p", "p.url != '/applications/'" | where_exp: "p", "p.url != '/applications/index.html'" | sort: "nav_order" -%}
+          {%- for p in app_pages -%}
+          <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+          {%- endfor -%}
         </ul>
       </li>
 

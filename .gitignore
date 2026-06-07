@@ -1,6 +1,7 @@
 # Python utility scripts
 generate_product_md.py
 generate_product_md_v2.py
+regenerate_products.py
 
 # Local HTML previews (not part of site)
 _html_preview/
