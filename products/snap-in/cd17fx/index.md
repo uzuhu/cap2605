@@ -73,7 +73,7 @@ nav_order: 1
       <td>330,360</td>
     </tr>
     <tr>
-      <td>标称电容量范围 Nominalcapacitancerange(μF)</td>
+      <td>标称电容量范围 Nominal Capacitancerange(μF)</td>
       <td>150~1500</td>
     </tr>
     <tr>
@@ -81,11 +81,11 @@ nav_order: 1
       <td>-10%～+20%（25℃,120Hz）</td>
     </tr>
     <tr>
-      <td>漏电流Leakagecurrent(μA)</td>
+      <td>漏电流Leakage Current (μA)</td>
       <td>I≤1xC （20℃,5minutes)Max.C:NominalCapacitance(μF)</td>
     </tr>
     <tr>
-      <td>损耗角正切值 Dissipationfactor(tgδ) (25℃,120Hz)</td>
+      <td>损耗角正切值 Dissipation Factor(tgδ) (25℃,120Hz)</td>
       <td>150~600μF: ≤0.1 700~1500μF: ≤0.15</td>
     </tr>
     <tr>
@@ -98,7 +98,7 @@ nav_order: 1
     </tr>
     <tr>
       <td></td>
-      <td>试验后：施加标称电压30分钟，于24至48小时之间测试。 Aftertest:URtobeappliedfor30minutes,24to48hoursbeforemeasurement.</td>
+      <td>试验后：施加标称电压30分钟，于24至48小时之间测试。 After test: UR to be appliedfor30minutes,24 to 48 hoursbeforemeasurement.</td>
     </tr>
   </tbody>
 </table>

@@ -1,0 +1,11 @@
+# Python utility scripts
+generate_product_md.py
+generate_product_md_v2.py
+
+# Local HTML previews (not part of site)
+_html_preview/
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata

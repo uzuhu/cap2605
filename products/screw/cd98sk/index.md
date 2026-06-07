@@ -63,48 +63,48 @@ nav_order: 1
   </thead>
   <tbody>
     <tr>
-      <td>使用温度范围 OperatingTemperature Range(℃)</td>
+      <td>使用温度范围 OperatingTemperature Range (℃)</td>
       <td>-40~+85</td>
     </tr>
     <tr>
-      <td>额定电压 RatedVoltage(V)</td>
+      <td>额定电压 Rated Voltage(V)</td>
       <td>16,20,25</td>
     </tr>
     <tr>
-      <td>标称容量 Nominalcapacitance(F)</td>
+      <td>标称容量 Nominal Capacitance(F)</td>
       <td>0.5F~2F</td>
     </tr>
     <tr>
-      <td>漏电流 Leakagecurrent(μA)</td>
+      <td>漏电流 Leakage Current (μA)</td>
       <td>I≤3 CV (at 20℃ , afee 5 minutes)</td>
     </tr>
     <tr>
-      <td>耐久性 LoadLife(+85℃)</td>
+      <td>耐久性 Load Life(+85℃)</td>
       <td>时间 time</td>
     </tr>
     <tr>
       <td></td>
-      <td>容量变化率Capacitancechange</td>
+      <td>容量变化率Capacitance Change</td>
     </tr>
     <tr>
       <td></td>
-      <td>漏电流Leakagecurrent</td>
+      <td>漏电流Leakage Current</td>
     </tr>
     <tr>
-      <td>高温贮存 ShelfLife(+85℃)</td>
+      <td>高温贮存 Shelf Life(+85℃)</td>
       <td>时间 time</td>
     </tr>
     <tr>
       <td></td>
-      <td>容量变化率Capacitancechange</td>
+      <td>容量变化率Capacitance Change</td>
     </tr>
     <tr>
       <td></td>
-      <td>漏电流Leakagecurrent</td>
+      <td>漏电流Leakage Current</td>
     </tr>
     <tr>
       <td></td>
-      <td>试验后：施加标称电压30分钟，于24至48小时之间测试。 Aftertest:URtobeappliedfor30minutes,24to48hoursbeforemeasurement.</td>
+      <td>试验后：施加标称电压30分钟，于24至48小时之间测试。 After test: UR to be appliedfor30minutes,24 to 48 hoursbeforemeasurement.</td>
     </tr>
   </tbody>
 </table>

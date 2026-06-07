@@ -64,15 +64,15 @@ nav_order: 1
   </thead>
   <tbody>
     <tr>
-      <td>使用温度范围 OperatingTemperature Range(℃)</td>
+      <td>使用温度范围 OperatingTemperature Range (℃)</td>
       <td>-25~+105</td>
     </tr>
     <tr>
-      <td>额定电压 RatedVoltage(V)</td>
+      <td>额定电压 Rated Voltage(V)</td>
       <td>160~500</td>
     </tr>
     <tr>
-      <td>标称容量 Nominalcapacitance(μF)</td>
+      <td>标称容量 Nominal Capacitance(μF)</td>
       <td>270~39,000</td>
     </tr>
     <tr>
@@ -80,48 +80,48 @@ nav_order: 1
       <td>±20%</td>
     </tr>
     <tr>
-      <td>漏电流 Leakagecurrent(μA)</td>
-      <td>I≤0.02CVor5mA,whichissmaller.(at20℃,after5minutes)</td>
+      <td>漏电流 Leakage Current (μA)</td>
+      <td>I ≤ 0.02CV or 5mA,whichever is smaller.(at20℃,after5minutes)</td>
     </tr>
     <tr>
-      <td>损耗角正切值 Dissipation Factor(20℃,120Hz)</td>
+      <td>损耗角正切值 Dissipation Factor (20℃, 120Hz)</td>
       <td>160~250:tanδ≤0.25</td>
     </tr>
     <tr>
-      <td>耐久性 LoadLife(+105℃)</td>
+      <td>耐久性 Load Life(+105℃)</td>
       <td>时间 time</td>
     </tr>
     <tr>
       <td></td>
-      <td>容量变化率Capacitancechange</td>
+      <td>容量变化率Capacitance Change</td>
     </tr>
     <tr>
       <td></td>
-      <td>漏电流Leakagecurrent</td>
+      <td>漏电流Leakage Current</td>
     </tr>
     <tr>
       <td></td>
-      <td>损耗角正切值Dissipationfactor</td>
+      <td>损耗角正切值Dissipation Factor</td>
     </tr>
     <tr>
-      <td>高温贮存 ShelfLife(+105℃)</td>
+      <td>高温贮存 Shelf Life(+105℃)</td>
       <td>时间 time</td>
     </tr>
     <tr>
       <td></td>
-      <td>容量变化率Capacitancechange</td>
+      <td>容量变化率Capacitance Change</td>
     </tr>
     <tr>
       <td></td>
-      <td>漏电流Leakagecurrent</td>
+      <td>漏电流Leakage Current</td>
     </tr>
     <tr>
       <td></td>
-      <td>损耗角正切值Dissipationfactor</td>
+      <td>损耗角正切值Dissipation Factor</td>
     </tr>
     <tr>
       <td></td>
-      <td>试验后：施加标称电压30分钟，于24至48小时之间测试。 Aftertest:URtobeappliedfor30minutes,24to48hoursbeforemeasurement.</td>
+      <td>试验后：施加标称电压30分钟，于24至48小时之间测试。 After test: UR to be appliedfor30minutes,24 to 48 hoursbeforemeasurement.</td>
     </tr>
   </tbody>
 </table>
