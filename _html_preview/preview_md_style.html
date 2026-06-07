@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>预览 - 优化效果</title>
+<style>
 /* ============================================================
    南通华裕电子有限公司 - Nantong Huayu Electronics
    Compact, technical, data-focused design
@@ -239,7 +246,7 @@ main > article,
   font-size: inherit;
 }
 
-/* Tables in page-content (Markdown rendered tables, NOT spec-table / spec-data-table) */
+/* Tables in page-content */
 .page-content table {
   width: auto;
   max-width: 100%;
@@ -249,10 +256,10 @@ main > article,
   margin: 10px 0 14px;
 }
 .page-content table th {
-  background: var(--c-bg-alt);
-  color: var(--c-text);
+  background: var(--c-primary);
+  color: #fff;
   padding: 6px 12px;
-  border: 1px solid var(--c-border);
+  border: 1px solid var(--c-primary-light);
   text-align: left;
   font-weight: 600;
   white-space: nowrap;
@@ -263,16 +270,10 @@ main > article,
   vertical-align: top;
 }
 .page-content table tbody tr:nth-child(even) {
-  background: #f9fafc;
+  background: var(--c-bg-alt);
 }
 .page-content table tbody tr:hover {
-  background: #edf2fa;
-}
-/* spec-data-table keeps its own dark header regardless of wrapper */
-.page-content .spec-data-table thead th {
-  background: var(--c-primary);
-  color: #fff;
-  border-color: var(--c-primary-light);
+  background: #e8f0fa;
 }
 
 main > article h1,
@@ -528,3 +529,120 @@ main > article table tbody tr:nth-child(even),
   .site-nav, .site-footer, .breadcrumb { display: none; }
   body { font-size: 12pt; }
 }
+
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo"><span class="logo-text">HUAYU</span></a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="#">首页</a></li>
+      <li class="nav-item has-dropdown">
+        <a href="#">产品中心</a>
+        <ul class="nav-dropdown">
+          <li class="has-dropdown"><a href="#">牛角型 Snap-in <span class="caret">▸</span></a>
+            <ul class="nav-dropdown nav-dropdown-nested">
+              <li><a href="#">CD292</a></li><li><a href="#">CD294</a></li><li><a href="#">CD297</a></li><li><a href="#">CD298</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#">螺栓型 Screw <span class="caret">▸</span></a>
+            <ul class="nav-dropdown nav-dropdown-nested">
+              <li><a href="#">CD135</a></li><li><a href="#">CD13L</a></li><li><a href="#">CD13NH</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item has-dropdown">
+        <a href="#">应用领域</a>
+        <ul class="nav-dropdown">
+          <li class="has-dropdown"><a href="#">按行业 <span class="caret">▸</span></a>
+            <ul class="nav-dropdown nav-dropdown-nested">
+              <li><a href="#">工业电源</a></li><li><a href="#">新能源</a></li><li><a href="#">UPS</a></li><li><a href="#">变频器</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#">按设备 <span class="caret">▸</span></a>
+            <ul class="nav-dropdown nav-dropdown-nested">
+              <li><a href="#">逆变器</a></li><li><a href="#">伺服驱动器</a></li><li><a href="#">电焊机</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item has-dropdown">
+        <a href="#">技术资料</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">型号命名规则</a></li>
+          <li><a href="#">使用注意事项</a></li>
+          <li><a href="#">端子尺寸图</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+</nav>
+<main id="main-content">
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">应用领域</a></li>
+      <li><a href="#">按行业</a></li>
+      <li><span aria-current="page">工业电源</span></li>
+    </ol>
+  </div>
+  <article class="page-content">
+    <h1>工业电源电容方案</h1>
+    <p>工业电源是铝电解电容最核心的应用领域之一。针对不同功率和拓扑结构的工业电源，华裕电子提供以下电容方案。</p>
+    <h2>推荐产品系列</h2>
+    <table>
+      <thead><tr><th>应用场景</th><th>推荐系列</th><th>关键特性</th><th>典型电压/容量</th></tr></thead>
+      <tbody>
+        <tr><td>通用开关电源输入滤波</td><td>CD92 / CD135</td><td>低压大容量</td><td>25~100V, 1,000~100,000μF</td></tr>
+        <tr><td>开关电源DC-Link</td><td>CD294 / CD297</td><td>长寿命, 中高压</td><td>350~500V, 470~3,300μF</td></tr>
+        <tr><td>PFC输出滤波</td><td>CD13L</td><td>长寿命, 低ESR</td><td>400~450V, 680~2,700μF</td></tr>
+        <tr><td>高频开关电源</td><td>CD17FX</td><td>极低ESR/ESL</td><td>200~400V, 100~1,000μF</td></tr>
+        <tr><td>高温环境电源</td><td>CD13NH</td><td>105℃高温</td><td>160~500V, 270~39,000μF</td></tr>
+      </tbody>
+    </table>
+    <h2>选型建议</h2>
+    <ol>
+      <li><strong>电压选择：</strong>工作电压建议为额定电压的70%~80%</li>
+      <li><strong>温度考虑：</strong>高温环境下优先选择CD13NH(105℃)系列</li>
+      <li><strong>寿命要求：</strong>长寿命需求选择CD294(5000h)、CD298(10000h)</li>
+      <li><strong>纹波电流：</strong>高频大纹波场景选CD295或CD17FX</li>
+    </ol>
+
+    <h1 style="margin-top:40px">使用注意事项（技术资料示例）</h1>
+    <p>为使您获得电解电容器的最佳性能和延长电解电容器的使用寿命，在使用电解电容器前，请务必阅读本注意事项。</p>
+    <h2>1. 极性确认 DC electrolytic capacitors are polarized.</h2>
+    <p>确定极性，极性标志在电容器的基体上。以免因极性反可能引起电路短路或电容器损坏，当极性不固定或不确定的，使用双极性电容器。<strong>注意直流电解电容器不能使用于交流。</strong></p>
+    <h2>3. 使用电压 DO NOT apply voltage greater than rated voltage.</h2>
+    <p>使用电压大于额定电压，漏电流会增大，可能损坏电容器。<strong>建议工作电压为额定电压的70%~80%</strong>，电容器在建议的工作电压下使用可延长电容器的寿命。</p>
+    <h2>7. 使用温度与寿命</h2>
+    <p>电容器的寿命与其使用的温度有关，<strong>使用温度每降低10℃，其寿命是额定温度下的2倍</strong>。</p>
+    <p>计算公式：</p>
+    <div class="formula-block"><code>L₂ = L₁ × 2^((T₁ − T₂) / 10)</code></div>
+    <table>
+      <thead><tr><th>变量</th><th>含义</th></tr></thead>
+      <tbody>
+        <tr><td>L₁</td><td>额定温度下的寿命</td></tr>
+        <tr><td>L₂</td><td>实际温度下的寿命</td></tr>
+        <tr><td>T₁</td><td>额定使用温度 (°C)</td></tr>
+        <tr><td>T₂</td><td>实际使用温度 (°C)</td></tr>
+      </tbody>
+    </table>
+    <h2>型号命名规则示例</h2>
+    <pre><code>BP 2G 682 M 077155 S
+│  │  │   │ │      │
+│  │  │   │ │      └── 特殊代码 Special Code
+│  │  │   │ └───────── 尺寸代码 Diameter Code
+│  │  │   └─────────── 容量偏差 Capacitance Tolerance
+│  │  └─────────────── 容量代码 Capacitance Code
+│  └────────────────── 额定电压代码 Rated Voltage Code
+└───────────────────── 系列代码 Series Code</code></pre>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">南通华裕电子有限公司 &nbsp;|&nbsp; <a href="mailto:sales@huayu-cap.com">sales@huayu-cap.com</a></div>
+</footer>
+</body>
+</html>
