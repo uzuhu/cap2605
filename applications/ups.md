@@ -1,9 +1,12 @@
 ---
-layout: page
-title: "UPS 不间断电源电容方案"
-nav_order: 4
+layout: default
+title: "UPS不间断电源铝电解电容选型方案"
+nav_short: "UPS不间断电源"
+description: "华裕电子铝电解电容在UPS不间断电源领域的选型方案。整流滤波、DC-Link、输出滤波电容选型，推荐CD135、CD294、CD298系列，含不同功率等级完整配置方案。"
+nav_order: 7
 ---
-# UPS 不间断电源电容方案
+
+# UPS不间断电源铝电解电容选型方案
 
 UPS（Uninterruptible Power Supply，不间断电源）在市电异常时为负载提供持续、稳定的电力供应，广泛应用于数据中心、医疗设备、工业控制、通信基站等关键场景。铝电解电容在 UPS 中承担着整流滤波、直流支撑、逆变器输出滤波等重要功能，其可靠性直接关系到 UPS 的供电连续性。
 

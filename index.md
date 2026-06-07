@@ -74,28 +74,40 @@ keywords: 铝电解电容,电解电容厂家,牛角型电容,螺栓型电容,Sna
 <section class="home-products" style="margin-top:8px;">
   <h2>应用领域</h2>
   <p style="font-size:var(--font-size-sm);color:var(--c-text-light);margin-bottom:10px;">
-    华裕电子铝电解电容器广泛应用于以下领域，点击查看详细电容选型方案：
+    华裕电子铝电解电容器广泛应用于以下领域，点击查看详细选型方案：
   </p>
   <div class="app-grid">
-    <a href="{{ '/applications/frequency-converter/' | relative_url }}" class="app-card">
-      <h3>变频器</h3>
-      <p>工业变频器直流支撑电容，CD13NH、CD13HL等系列，高可靠性。</p>
-    </a>
-    <a href="{{ '/applications/ups/' | relative_url }}" class="app-card">
-      <h3>UPS 不间断电源</h3>
-      <p>UPS直流母线电容，长寿命设计，CD294、CD298系列推荐。</p>
+    <a href="{{ '/applications/industrial-power/' | relative_url }}" class="app-card">
+      <h3>工业电源</h3>
+      <p>开关电源、DC-DC转换器滤波电容方案，CD292、CD294系列广泛应用。</p>
     </a>
     <a href="{{ '/applications/renewable-energy/' | relative_url }}" class="app-card">
       <h3>新能源</h3>
-      <p>光伏逆变器、风电变流器电容方案，CD297、CD298、CD13HL系列。</p>
+      <p>光伏逆变器、风电变流器、储能系统电容方案，CD297、CD298、CD13HL系列。</p>
     </a>
-    <a href="{{ '/applications/industrial-power/' | relative_url }}" class="app-card">
-      <h3>工业电源</h3>
-      <p>开关电源、DC-DC转换器滤波电容，CD292、CD294系列广泛应用。</p>
+    <a href="{{ '/applications/solar-inverter/' | relative_url }}" class="app-card">
+      <h3>光伏逆变器</h3>
+      <p>组串式、集中式光伏专用电容选型，CD298 10000h超长寿命系列。</p>
+    </a>
+    <a href="{{ '/applications/inverter/' | relative_url }}" class="app-card">
+      <h3>逆变器</h3>
+      <p>通用逆变器DC-Link和输出滤波电容方案，CD294、CD297、CD17FX系列。</p>
+    </a>
+    <a href="{{ '/applications/frequency-converter/' | relative_url }}" class="app-card">
+      <h3>变频器</h3>
+      <p>工业变频器直流支撑电容选型，CD13NH、CD13HL系列，高可靠性。</p>
+    </a>
+    <a href="{{ '/applications/servo-drive/' | relative_url }}" class="app-card">
+      <h3>伺服驱动器</h3>
+      <p>伺服驱动DC-Link和制动吸收电容方案，CD294、CD298系列推荐。</p>
+    </a>
+    <a href="{{ '/applications/ups/' | relative_url }}" class="app-card">
+      <h3>UPS不间断电源</h3>
+      <p>UPS整流滤波、直流母线电容选型，CD135、CD298长寿命系列。</p>
     </a>
     <a href="{{ '/applications/welder/' | relative_url }}" class="app-card">
-      <h3>电焊设备</h3>
-      <p>电焊机高纹波电容方案，CD295、CD136系列，承受大电流冲击。</p>
+      <h3>电焊机</h3>
+      <p>MIG/TIG/等离子切割电容方案，CD135、CD136系列，高纹波电流。</p>
     </a>
     <a href="{{ '/applications/medical-equipment/' | relative_url }}" class="app-card">
       <h3>医疗设备</h3>

@@ -2,7 +2,7 @@
 layout: default
 title: "应用领域 — 铝电解电容解决方案"
 breadcrumb_title: "应用领域"
-description: "华裕电子铝电解电容在各应用领域的解决方案，包括光伏逆变器、UPS、工业电源、变频器、医疗设备、电焊设备等，提供专业选型建议。"
+description: "华裕电子铝电解电容在各应用领域的解决方案，包括光伏逆变器、UPS、工业电源、变频器、医疗设备、电焊机等，提供专业选型建议。"
 keywords: "光伏逆变器电容,UPS电解电容,工业电源电容,变频器电容,医疗设备电容,电焊机电容,铝电解电容应用"
 nav_order: 1
 ---
@@ -20,51 +20,57 @@ nav_order: 1
 <div class="app-grid">
 
 <div class="app-card">
-  <h3>🔆 新能源</h3>
-  <p>光伏逆变器、风电变流器、储能系统 PCS 的 DC-Link 和滤波电容方案。</p>
-  <a href="{{ '/applications/renewable-energy/' | relative_url }}" class="btn-link">查看方案 →</a>
-</div>
-
-<div class="app-card">
-  <h3>🔋 UPS 不间断电源</h3>
-  <p>UPS 系统的直流母线支撑和输出滤波电容，保障电力持续供应。</p>
-  <a href="{{ '/applications/ups/' | relative_url }}" class="btn-link">查看方案 →</a>
-</div>
-
-<div class="app-card">
   <h3>🏭 工业电源</h3>
-  <p>开关电源、直流电源、电镀电源的整流滤波和 DC-Link 电容方案。</p>
+  <p>开关电源、DC-DC转换器、PFC电路的铝电解电容选型方案，CD294、CD13L系列推荐。</p>
   <a href="{{ '/applications/industrial-power/' | relative_url }}" class="btn-link">查看方案 →</a>
 </div>
 
 <div class="app-card">
-  <h3>⚡ 变频器</h3>
-  <p>变频器 DC-Link、制动电路和吸收电路的电解电容选型方案。</p>
-  <a href="{{ '/applications/frequency-converter/' | relative_url }}" class="btn-link">查看方案 →</a>
+  <h3>🔆 新能源</h3>
+  <p>光伏逆变器、风电变流器、储能系统的DC-Link和滤波电容方案，CD298、CD13HL超长寿命系列。</p>
+  <a href="{{ '/applications/renewable-energy/' | relative_url }}" class="btn-link">查看方案 →</a>
 </div>
 
 <div class="app-card">
-  <h3>🏥 医疗设备</h3>
-  <p>医疗影像设备、监护仪、手术设备的电源滤波和储能电容方案。</p>
-  <a href="{{ '/applications/medical-equipment/' | relative_url }}" class="btn-link">查看方案 →</a>
-</div>
-
-<div class="app-card">
-  <h3>🔧 电焊设备</h3>
-  <p>电焊机、电弧焊机的储能电容和滤波电容，高纹波电流能力。</p>
-  <a href="{{ '/applications/welder/' | relative_url }}" class="btn-link">查看方案 →</a>
+  <h3>☀️ 光伏逆变器</h3>
+  <p>组串式、集中式光伏逆变器专用铝电解电容选型，CD298 10000h寿命系列，耐高低温。</p>
+  <a href="{{ '/applications/solar-inverter/' | relative_url }}" class="btn-link">查看方案 →</a>
 </div>
 
 <div class="app-card">
   <h3>📡 逆变器</h3>
-  <p>光伏逆变器、储能逆变器、电机驱动逆变器的 DC-Link 电容方案。</p>
+  <p>通用逆变器DC-Link和输出滤波铝电解电容方案，CD294、CD297、CD17FX系列推荐。</p>
   <a href="{{ '/applications/inverter/' | relative_url }}" class="btn-link">查看方案 →</a>
 </div>
 
 <div class="app-card">
+  <h3>⚡ 变频器</h3>
+  <p>变频器直流母线支撑和制动电路铝电解电容选型，CD13NH、CD13HL系列，含计算公式。</p>
+  <a href="{{ '/applications/frequency-converter/' | relative_url }}" class="btn-link">查看方案 →</a>
+</div>
+
+<div class="app-card">
   <h3>🎛️ 伺服驱动器</h3>
-  <p>伺服驱动器 DC-Link 和缓冲电路电容，高纹波、长寿命。</p>
+  <p>伺服驱动器DC-Link和制动吸收铝电解电容方案，高纹波、低ESR，CD294/CD298系列。</p>
   <a href="{{ '/applications/servo-drive/' | relative_url }}" class="btn-link">查看方案 →</a>
+</div>
+
+<div class="app-card">
+  <h3>🔋 UPS不间断电源</h3>
+  <p>UPS整流滤波、DC-Link、输出滤波铝电解电容选型，CD135、CD298系列，含各功率方案。</p>
+  <a href="{{ '/applications/ups/' | relative_url }}" class="btn-link">查看方案 →</a>
+</div>
+
+<div class="app-card">
+  <h3>🔧 电焊机</h3>
+  <p>MIG/TIG/等离子切割电焊机铝电解电容方案，CD135、CD136大容量系列，高纹波能力。</p>
+  <a href="{{ '/applications/welder/' | relative_url }}" class="btn-link">查看方案 →</a>
+</div>
+
+<div class="app-card">
+  <h3>🏥 医疗设备</h3>
+  <p>X射线、CT、MRI等医疗设备电源铝电解电容选型，CD13HL、CD298高可靠性系列。</p>
+  <a href="{{ '/applications/medical-equipment/' | relative_url }}" class="btn-link">查看方案 →</a>
 </div>
 
 </div>

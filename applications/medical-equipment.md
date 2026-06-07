@@ -1,11 +1,12 @@
 ---
 layout: default
-title: 医疗设备
-breadcrumb_title: Medical Equipment
-nav_order: 6
+title: "医疗设备铝电解电容选型方案"
+nav_short: "医疗设备"
+description: "华裕电子铝电解电容在医疗设备领域的选型方案。X射线、CT、MRI、超声诊断等医疗电源电容推荐，CD13HL、CD298等系列，高可靠性长寿命产品。"
+nav_order: 9
 ---
 
-# 医疗设备电容方案
+# 医疗设备铝电解电容选型方案
 
 医疗设备对电容的可靠性、安全性和寿命要求极高。华裕电子电容产品通过严格质量控制，为各类医疗设备提供可靠的电源解决方案。
 

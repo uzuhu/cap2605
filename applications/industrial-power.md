@@ -1,11 +1,12 @@
 ---
 layout: default
-title: 工业电源
-breadcrumb_title: Industrial Power
+title: "工业电源铝电解电容选型方案"
+nav_short: "工业电源"
+description: "华裕电子铝电解电容在工业电源领域的选型方案。涵盖开关电源、DC-DC转换器、PFC电路等应用，推荐CD294、CD297、CD13L等系列，提供详细选型建议和典型电路配置。"
 nav_order: 1
 ---
 
-# 工业电源电容方案
+# 工业电源铝电解电容选型方案
 
 工业电源是铝电解电容最核心的应用领域之一。开关电源（SMPS）、DC-DC 转换器、PFC 电路等工业电源设备，对电容的可靠性、纹波承受能力和使用寿命都有较高要求。
 

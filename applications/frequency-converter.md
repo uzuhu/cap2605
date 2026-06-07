@@ -1,11 +1,12 @@
 ---
 layout: default
-title: 变频器
-breadcrumb_title: Frequency Converter
-nav_order: 4
+title: "变频器铝电解电容选型方案"
+nav_short: "变频器"
+description: "华裕电子铝电解电容在变频器领域的选型方案。适用于低压、中压、高压变频器直流母线支撑，推荐CD294、CD13NH、CD13HL等系列，含选型计算公式和典型电路配置。"
+nav_order: 5
 ---
 
-# 变频器电容方案
+# 变频器铝电解电容选型方案
 
 变频器是工业自动化的核心设备，其内部直流母线电容（DC-Link）对系统稳定性和寿命起着决定性作用。华裕电子针对各类变频器提供专业的电容选型方案。
 

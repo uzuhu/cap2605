@@ -53,7 +53,7 @@
         <ul class="nav-dropdown">
           {%- assign app_pages = site.pages | where_exp: "p", "p.url contains '/applications/'" | where_exp: "p", "p.url != '/applications/'" | where_exp: "p", "p.url != '/applications/index.html'" | sort: "nav_order" -%}
           {%- for p in app_pages -%}
-          <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+          <li><a href="{{ p.url | relative_url }}">{{ p.nav_short | default: p.title }}</a></li>
           {%- endfor -%}
         </ul>
       </li>
