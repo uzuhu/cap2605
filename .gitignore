@@ -10,3 +10,5 @@ _html_preview/
 _site/
 .jekyll-cache/
 .jekyll-metadata
+__pycache__/
+replace_placeholders.py

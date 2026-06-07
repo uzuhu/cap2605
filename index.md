@@ -77,27 +77,27 @@ keywords: 铝电解电容,电解电容厂家,牛角型电容,螺栓型电容,Sna
     华裕电子铝电解电容器广泛应用于以下领域，点击查看详细电容选型方案：
   </p>
   <div class="app-grid">
-    <a href="{{ '/applications/by-industry/frequency-converter/' | relative_url }}" class="app-card">
+    <a href="{{ '/applications/frequency-converter/' | relative_url }}" class="app-card">
       <h3>变频器</h3>
       <p>工业变频器直流支撑电容，CD13NH、CD13HL等系列，高可靠性。</p>
     </a>
-    <a href="{{ '/applications/by-industry/ups-systems/' | relative_url }}" class="app-card">
+    <a href="{{ '/applications/ups/' | relative_url }}" class="app-card">
       <h3>UPS 不间断电源</h3>
       <p>UPS直流母线电容，长寿命设计，CD294、CD298系列推荐。</p>
     </a>
-    <a href="{{ '/applications/by-industry/renewable-energy/' | relative_url }}" class="app-card">
+    <a href="{{ '/applications/renewable-energy/' | relative_url }}" class="app-card">
       <h3>新能源</h3>
       <p>光伏逆变器、风电变流器电容方案，CD297、CD298、CD13HL系列。</p>
     </a>
-    <a href="{{ '/applications/by-industry/industrial-power/' | relative_url }}" class="app-card">
+    <a href="{{ '/applications/industrial-power/' | relative_url }}" class="app-card">
       <h3>工业电源</h3>
       <p>开关电源、DC-DC转换器滤波电容，CD292、CD294系列广泛应用。</p>
     </a>
-    <a href="{{ '/applications/by-industry/welding-equipment/' | relative_url }}" class="app-card">
+    <a href="{{ '/applications/welder/' | relative_url }}" class="app-card">
       <h3>电焊设备</h3>
       <p>电焊机高纹波电容方案，CD295、CD136系列，承受大电流冲击。</p>
     </a>
-    <a href="{{ '/applications/by-industry/medical-equipment/' | relative_url }}" class="app-card">
+    <a href="{{ '/applications/medical-equipment/' | relative_url }}" class="app-card">
       <h3>医疗设备</h3>
       <p>医疗影像、监护设备电源电容，高可靠、长寿命，CD13HL系列推荐。</p>
     </a>

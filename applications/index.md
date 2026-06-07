@@ -28,7 +28,7 @@ nav_order: 1
 <div class="app-card">
   <h3>🔋 UPS 不间断电源</h3>
   <p>UPS 系统的直流母线支撑和输出滤波电容，保障电力持续供应。</p>
-  <a href="{{ '/applications/ups-systems/' | relative_url }}" class="btn-link">查看方案 →</a>
+  <a href="{{ '/applications/ups/' | relative_url }}" class="btn-link">查看方案 →</a>
 </div>
 
 <div class="app-card">
@@ -52,7 +52,7 @@ nav_order: 1
 <div class="app-card">
   <h3>🔧 电焊设备</h3>
   <p>电焊机、电弧焊机的储能电容和滤波电容，高纹波电流能力。</p>
-  <a href="{{ '/applications/welding-equipment/' | relative_url }}" class="btn-link">查看方案 →</a>
+  <a href="{{ '/applications/welder/' | relative_url }}" class="btn-link">查看方案 →</a>
 </div>
 
 <div class="app-card">

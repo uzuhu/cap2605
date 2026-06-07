@@ -369,13 +369,17 @@ main > article pre,
 .product-header h1 { margin-bottom: 2px; border-bottom: none; padding-bottom: 0; font-size: var(--font-size-2xl); }
 .product-type { color: var(--c-text-muted); font-size: var(--font-size-xs); margin-bottom: 1px; }
 .product-subtitle { color: var(--c-text-light); font-size: var(--font-size-sm); }
-
-.product-image-placeholder {
-  background: var(--c-bg-alt); border: 1px dashed var(--c-border); border-radius: var(--radius);
-  padding: 28px; text-align: center; margin: 0 0 20px;
+.product-image {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 16px;
+  border-radius: var(--radius);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  background: var(--c-bg-alt);
+  padding: 12px;
 }
-.product-image-placeholder .placeholder-text { display: block; color: var(--c-text-muted); font-size: var(--font-size-md); margin-bottom: 2px; }
-.product-image-placeholder .placeholder-size { display: block; color: var(--c-text-muted); font-size: 0.75rem; }
 
 .product-content section { margin-bottom: 18px; }
 .product-content h2 {

@@ -15,10 +15,8 @@ nav_order: 1
   <p class="product-subtitle">CD295系列为华裕电子牛角型铝电解电容器，具有优异的电气性能和可靠性，广泛应用于光伏逆变器、UPS、工业电源、变频器等对可靠性要求较高的场合。</p>
 </div>
 
-<div class="product-image-placeholder">
-  <span class="placeholder-text">CD295 series — product photo</span>
-  <span class="placeholder-size">建议尺寸: 600×400px, 透明背景 PNG</span>
-</div>
+<img src="{{ "/assets/images/products/snap-in-capacitor.png" | relative_url }}" alt="{{ page.title }}" class="product-image">
+
 
 <section class="product-content">
 
