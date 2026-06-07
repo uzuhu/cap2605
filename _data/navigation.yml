@@ -1,6 +1,7 @@
 - title: 首页
   url: /
 - title: 产品中心
+  url: /products/
   children:
     - title: 牛角型 Snap-in
       children:
@@ -41,12 +42,14 @@
         - title: CD98SK (超级电容)
           url: /products/screw/cd98sk/
 - title: 应用领域
+  url: /applications/
   children:
     - title: 按行业分类
       url: /applications/by-industry/
     - title: 按设备分类
       url: /applications/by-equipment/
 - title: 技术资料
+  url: /technical/
   children:
     - title: 型号命名规则
       url: /technical/part-number-system/
