@@ -123,10 +123,11 @@ strong { font-weight: 600; color: var(--c-text); }
 /* --- Breadcrumb --- */
 .breadcrumb {
   max-width: var(--max-width); margin: 0 auto;
-  padding: 4px 20px 3px;
+  padding: 4px 20px 4px;
   font-size: var(--font-size-xs);
   color: var(--c-text-muted);
   border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
 }
 .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; gap: 3px; }
 .breadcrumb li { margin: 0; }
@@ -136,7 +137,8 @@ strong { font-weight: 600; color: var(--c-text); }
 .breadcrumb [aria-current] { color: var(--c-text); font-weight: 500; }
 
 /* --- Main Content --- */
-main { max-width: var(--max-width); margin: 0 auto; padding: 12px 20px 40px; min-height: 60vh; }
+main { max-width: var(--max-width); margin: 0 auto; padding: 0 20px 40px; min-height: 60vh; }
+main > article { padding-top: 10px; }
 
 /* Markdown content typography */
 main > article,
