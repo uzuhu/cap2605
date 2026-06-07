@@ -523,6 +523,88 @@ main > article table tbody tr:nth-child(even),
   .app-grid { grid-template-columns: 1fr; }
 }
 
+/* === Product Center Page === */
+
+.product-center-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--c-primary);
+}
+.product-center-header h1 { margin-bottom: 4px; }
+.product-center-header .subtitle { color: var(--c-text-light); font-size: 0.9rem; }
+
+/* 选型引导 */
+.selection-guide {
+  background: var(--c-bg-alt);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+.selection-guide h2 { margin-top: 0; font-size: 1.1rem; }
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.guide-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--c-border);
+}
+.guide-card h3 { margin: 0 0 6px; font-size: 0.95rem; color: var(--c-primary); }
+.guide-card ul { margin: 0; padding-left: 1.2em; }
+.guide-card li { font-size: 0.8rem; line-height: 1.5; }
+
+/* 产品网格 */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 16px 0 28px;
+}
+.product-card {
+  border: 1px solid var(--c-border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #fff;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.product-card h3 { margin: 0 0 4px; font-size: 1rem; color: var(--c-primary); }
+.product-tag { font-size: 0.75rem; color: var(--c-accent); margin-bottom: 8px; }
+.product-spec-brief {
+  width: 100%;
+  font-size: 0.8rem;
+  border-collapse: collapse;
+  margin-bottom: 8px;
+}
+.product-spec-brief td {
+  padding: 3px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.product-spec-brief td:first-child { font-weight: 600; width: 60px; color: var(--c-text-light); }
+.btn-detail {
+  display: inline-block;
+  font-size: 0.82rem;
+  color: var(--c-primary);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 0;
+}
+.btn-detail:hover { text-decoration: underline; }
+
+/* 产品对比表 */
+.spec-data-table a { color: var(--c-primary); text-decoration: none; }
+.spec-data-table a:hover { text-decoration: underline; }
+
+/* === End Product Center === */
+
 /* --- Print --- */
 @media print {
   .site-nav, .site-footer, .breadcrumb { display: none; }
