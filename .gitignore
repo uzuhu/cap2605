@@ -12,3 +12,4 @@ _site/
 .jekyll-metadata
 __pycache__/
 replace_placeholders.py
+fix_product_md.py

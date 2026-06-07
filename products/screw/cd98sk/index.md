@@ -18,7 +18,6 @@ nav_order: 1
 <img src="{{ "/assets/images/products/screw-capacitor.png" | relative_url }}" alt="{{ page.title }}" class="product-image">
 
 
-<section class="product-content">
 
 ## 产品特点
 
@@ -200,4 +199,3 @@ Factor</td>
   <li><a href="/technical/terminal-dimensions/">端子尺寸图</a></li>
 </ul>
 
-</section>

@@ -142,9 +142,10 @@ strong { font-weight: 600; color: var(--c-text); }
 .content-wrap {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-main { padding: 0 0 40px; min-height: 60vh; }
+main { padding-bottom: 40px; min-height: 60vh; }
 main > article { padding-top: 10px; }
 
 /* Markdown content typography */
